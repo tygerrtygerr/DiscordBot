@@ -15,13 +15,8 @@ public class BabyBot {
 	
 	// Main method
 	public static void main(String[] args) throws LoginException {
-		String token = "NTgxMjMyNDIzMjU0MDk3OTI0.XgEveQ.t3nIXY9uyemXj3fyPkpbcYw6HNc";
+		String token = "redacted";
 		jda = new JDABuilder(AccountType.BOT).setToken(token).build();
-		//JDABuilder builder = new JDABuilder(AccountType.BOT);
-		//String token = "NTgxMjMyNDIzMjU0MDk3OTI0.XgEveQ.t3nIXY9uyemXj3fyPkpbcYw6HNc";
-		//builder.setToken(token);
-		//builder.setActivity(Activity.playing("Under Construction"));
-		//builder.build();
 
 		jda.getPresence().setStatus(OnlineStatus.IDLE);
 		jda.getPresence().setActivity(null);
